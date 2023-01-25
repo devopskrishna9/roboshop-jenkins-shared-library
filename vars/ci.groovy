@@ -10,7 +10,7 @@ def call()
                     echo 'compile the code'
                 }
             }
-            stage('unit test cases) {
+            stage('unit test cases') {
                     steps {
                         echo 'unit tests'
                     }
