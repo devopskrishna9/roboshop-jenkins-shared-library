@@ -8,6 +8,7 @@ def call()
             stage('compile/Build') {
                 steps {
                     echo 'compile the code'
+                    common.compile()
                 }
             }
             stage('unit test cases') {
