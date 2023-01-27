@@ -15,8 +15,10 @@ def call()
             }
             stage('unit test cases') {
                     steps {
-                        echo 'unit tests'
-                        common.unittests()
+                        script {
+                            echo 'unit tests'
+                            common.unittests()
+                        }
                     }
         }
         stage('Quality control') {
