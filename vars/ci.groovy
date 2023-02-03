@@ -3,9 +3,6 @@ def call() {
         env.SONAR_EXTRA_OPTS = " "
     }
 
-
-
-
     try {
         node('workstation') {
 
