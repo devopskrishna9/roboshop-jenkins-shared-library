@@ -30,8 +30,7 @@ def unittests() {
 }
 
 
-def email(string email_note) {
-
+def email(email_note) {
     mail bcc: '', body: "Job Failed - ${JOB_BASE_NAME}\nJenkins URL - ${JOB_URL}", cc: '', from: 'brkkrishna9@gmail.com', replyTo: '', subject: "Jenkins Job Failed - ${JOB_BASE_NAME}", to: 'brkkrishna9@gmail.com'
 }
 
