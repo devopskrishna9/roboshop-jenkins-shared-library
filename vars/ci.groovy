@@ -1,7 +1,8 @@
 def call() {
     try {
         node('workstation') {
-            stage('Cleanup') {
+
+            stage('Checkout') {
                 cleanWS()
             }
 
