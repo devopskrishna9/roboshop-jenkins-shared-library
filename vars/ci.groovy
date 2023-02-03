@@ -31,6 +31,7 @@ def call() {
                             sh "echo Sonar Scan"
                         }
                     }
+                }
                     stage('upload code to centralized place') {
                         steps {
                             echo 'upload code'
