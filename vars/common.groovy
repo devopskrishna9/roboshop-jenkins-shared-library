@@ -11,13 +11,13 @@ def compile() {
 def unittests() {
     if (app_lang == "nodejs") {
 //        developer is missing unit test cases to our project. He need to add them as best practices. We are skipping to proceed further
-//        sh 'npm test || true'
+        sh 'npm test || true'
 // 2nd approch Exception handling
-        try {
-            sh 'npm test'
-        } catch (Exception e) {
-            email("unit test failed")
-        }
+//        try {
+//            sh 'npm test'
+//        } catch (Exception e) {
+//            email("unit test failed")
+//        }
     }
 
     if (app_lang == "maven") {
