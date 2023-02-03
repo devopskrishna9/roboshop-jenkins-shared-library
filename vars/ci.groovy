@@ -2,10 +2,10 @@ def call() {
     try {
         node('workstation') {
 
-            stage('Checkout') {
-                cleanWS()
-                git branch: 'main', url: 'https://github.com/devopskrishna9/cart'
-            }
+//            stage('Checkout') {
+//                cleanWS()
+//                git branch: 'main', url: 'https://github.com/devopskrishna9/cart'
+//            }
 
             stage('Compile/Build') {
                 common.compile()
