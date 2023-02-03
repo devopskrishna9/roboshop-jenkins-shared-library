@@ -36,7 +36,7 @@ def call() {
                         }
                     }
 
-                    stage('upload code to centralized place') {
+                stage('upload code to centralized place') {
                         steps {
                             echo 'upload code'
                         }
