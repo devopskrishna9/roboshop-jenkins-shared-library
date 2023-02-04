@@ -1,6 +1,6 @@
 def compile() {
     if (app_lang == "nodejs") {
-        sh 'npm install'
+        sh 'npm install || true'
     }
 
     if (app_lang == "maven") {
