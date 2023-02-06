@@ -7,6 +7,9 @@ def call() {
     } else {
         env.PUSH_CODE = "true"
     }
+    if(!env.extraFiles) {
+        env.extraFiles = ""
+    }
 
     try {
         node('workstation') {
