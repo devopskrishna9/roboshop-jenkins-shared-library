@@ -1,9 +1,9 @@
 def call() {
     pipeline {
 
-//        options {
-//            ansiColor('xterm')
-//        }
+        options {
+            ansiColor('xterm')
+        }
 
         agent {
             node {
