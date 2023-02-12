@@ -1,6 +1,10 @@
 def call() {
     pipeline {
 
+        options {
+            ansiColor('xterm')
+        }
+
         agent {
             node {
                 label 'workstation'
@@ -15,7 +19,7 @@ def call() {
 
             stage('Terraform Init') {
                 steps {
-                    sh "terraform init -migrate-state -backend-config=env-${INFRA_ENV}/state.tfvars"
+                    sh "terraform init -backend-config=env-${INFRA_ENV}/state.tfvars"
                 }
             }
 
@@ -23,3 +27,5 @@ def call() {
 
     }
 }
+
+#-migrate-state
