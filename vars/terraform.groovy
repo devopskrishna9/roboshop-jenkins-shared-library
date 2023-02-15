@@ -20,7 +20,7 @@ def call() {
 
             stage('Terraform Init') {
                 steps {
-                    sh "terraform init -reconfigure -backend-config=env-${INFRA_ENV}/state.tfvars"
+                    sh "terraform init -backend-config=env-${INFRA_ENV}/state.tfvars"
                 }
             }
             stage('Terraform Apply') {
